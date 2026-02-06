@@ -3,17 +3,17 @@ name: github action demo pipeline
 
 #trigger event
 on:
-   push:
-      branches:
+    push:
+       branches:
             - main
 
 jobs:
     demo-job:
-          runs-on: ubantu-latest
+          runs-on: ubuntu-latest
 
           steps:
             - name: checkout code
               uses: action/checkout@v2
 
             - name: print message
-              runs: echo "Welcome to github action "
+              runs: echo "Welcome to github actions "
